@@ -2,4 +2,4 @@ gem 'kaminari'
 
 run_bundle
 
-generate('kaminari:config')
+run 'bundle exec rails g kaminari:config'
