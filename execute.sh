@@ -4,6 +4,6 @@ bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/pry.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/kaminari.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/erb2slim.rb
-bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/capstrano.rb
+bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/capistrano.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/template.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/rubocop.rb
