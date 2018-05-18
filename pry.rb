@@ -21,3 +21,7 @@ rescue LoadError
   puts "no awesome_print :("
 end
 RUBY
+
+git add: "."
+
+git commit: %Q{ -m 'Pryの設定' }
