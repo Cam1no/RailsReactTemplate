@@ -1,3 +1,5 @@
+run 'yarn install'
+
 run 'rm -rf app/javascript/'
 
 run 'svn export https://github.com/Cam1no/RailsReactTemplate/trunk/javascript/ ./app/javascript/'
