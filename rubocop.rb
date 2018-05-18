@@ -28,3 +28,10 @@ YAML
 git add: "."
 
 git commit: %Q{ -m 'rubocopの設定' }
+
+run "bundle exec rubocop -a --auto-gen-config"
+
+
+git add: "."
+
+git commit: %Q{ -m 'fix rubocop' }
