@@ -5,3 +5,7 @@ end
 run_bundle
 
 run 'bundle exec erb2slim -d app/views'
+
+git add: "."
+
+git commit: %Q{ -m 'erbをslimに変換' }
