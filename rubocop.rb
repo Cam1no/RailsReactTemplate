@@ -12,6 +12,7 @@ AllCops:
     - 'Gemfile'
     - 'db/**/*'
     - 'spec/spec_helper.rb'
+    - 'node_modules/**/*'
 Rails:
   Enabled: true
 Style/Documentation:
