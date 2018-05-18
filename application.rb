@@ -24,3 +24,8 @@ application do
     config.autoload_paths += Dir['#{config.root}/lib/**/']
   }
 end
+
+
+git add: "."
+
+git commit: %Q{ -m 'application.rbの設定' }
