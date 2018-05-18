@@ -7,6 +7,7 @@ gem_group :development, :test do
   gem 'pry-coolline'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  gem 'awesome_print'
 end
 
 run_bundle
