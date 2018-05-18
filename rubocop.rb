@@ -24,3 +24,7 @@ Style/PercentLiteralDelimiters:
   Enabled: false
 inherit_from: .rubocop_todo.yml
 YAML
+
+git add: "."
+
+git commit: %Q{ -m 'rubocopの設定' }
