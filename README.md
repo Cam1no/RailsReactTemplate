@@ -19,12 +19,3 @@ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib 
 wget https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/setup.sh
 sh setup.sh
 ```
-
-# packages.jsonに追記
-```
-"scripts": {
-  "start": "react-scripts start && NODE_ENV=development",
-  "build": "react-scripts build",
-}
-
-```
