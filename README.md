@@ -16,8 +16,8 @@ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib 
 
 # railsアプリができた後に
 ```
-wget https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/execute.sh
-sh execute.sh
+wget https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/setup.sh
+sh setup.sh
 ```
 
 # packages.jsonに追記
