@@ -8,6 +8,7 @@ gem_group :development, :test do
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
   gem 'awesome_print'
+  gem 'better_errors'
 end
 
 run_bundle
