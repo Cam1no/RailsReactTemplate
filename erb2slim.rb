@@ -1,3 +1,4 @@
+gem 'slim-rails'
 gem_group :development do
   gem 'html2slim'
 end
