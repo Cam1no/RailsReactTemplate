@@ -8,4 +8,5 @@ bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/bullet.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/template.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/rspec.rb
+bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/eslint.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/rubocop.rb
