@@ -19,3 +19,18 @@ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib 
 wget https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/setup.sh
 sh setup.sh
 ```
+
+## setting database
+```
+## databaseのusername/password等を変更する
+$ bundle exec rake db:create
+$ bundle exec rake db:migrate
+```
+
+## 起動
+```
+$ bundle exec rails s
+## 別画面で
+$ yarn dev
+$ open http://localhost:3000
+```
