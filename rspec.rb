@@ -1,3 +1,5 @@
+run 'bundle exec spring stop'
+
 gem_group :development, :test do
   # rspec
   gem 'rspec-rails'
