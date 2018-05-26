@@ -4,7 +4,6 @@ $ bundle init
 $ vi Gemfile
 ## railsのコメントアウトを外す
 $ bundle install --path vendor/bundle
-$ bundle exec rails new .
 $ bundle exec rails new . -d mysql --api --skip-test --webpack=react
 ```
 
