@@ -1,10 +1,16 @@
 # 初期設定
 ```
 $ bundle init
-$ vi Gemfile
+
 ## railsのコメントアウトを外す
+$ vi Gemfile
+
 $ bundle install --path vendor/bundle
 $ bundle exec rails new . -d mysql --api --skip-test --webpack=react
+
+## vendor/bundle配下をignoreする
+$ vi .gitignore
+
 ```
 
 ### mysqlでこけた場合
