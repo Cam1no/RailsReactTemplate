@@ -5,6 +5,7 @@ application do
     I18n.enforce_available_locales = true
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :ja
+    config.active_record.schema_format = :sql
     config.generators do |g|
       g.orm :active_record
       g.template_engine :slim
