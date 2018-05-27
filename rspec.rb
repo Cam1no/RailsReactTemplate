@@ -25,11 +25,12 @@ end
 
 insert_into_file 'spec/spec_helper.rb', after: 'RSpec.configure do |config|' do
   <<-RUBY
-
-  FactoryBot.reload
-  FactoryBot.factories.clear
-  FactoryBot.sequences.clear
-  FactoryBot.find_definitions
+  config.before :all do
+    FactoryBot.reload
+    FactoryBot.factories.clear
+    FactoryBot.sequences.clear
+    FactoryBot.find_definitions
+  end
   config.include FactoryBot::Syntax::Methods
   RUBY
 end
