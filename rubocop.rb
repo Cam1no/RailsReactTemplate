@@ -11,7 +11,7 @@ AllCops:
     - 'config/**/*'
     - 'Gemfile'
     - 'db/**/*'
-    - 'spec/spec_helper.rb'
+    - 'spec/**/*'
     - 'node_modules/**/*'
 Rails:
   Enabled: true
