@@ -23,6 +23,8 @@ Style/AsciiComments:
   Enabled: false
 Style/PercentLiteralDelimiters:
   Enabled: false
+Metrics/LineLength:
+  Max: 120
 inherit_from: .rubocop_todo.yml
 YAML
 
