@@ -1,3 +1,4 @@
+run_bundle
 # config/application.rb
 application do
   %q{
