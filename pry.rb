@@ -4,7 +4,7 @@ gem_group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-state'
-  gem 'pry-coolline'
+  # gem 'pry-coolline'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
   gem 'awesome_print'
