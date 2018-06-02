@@ -2,6 +2,9 @@ gem 'slim-rails'
 gem_group :development do
   gem 'html2slim'
 end
+gem_group :test do
+  gem 'slim_lint'
+end
 
 run_bundle
 
