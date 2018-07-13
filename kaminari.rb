@@ -4,6 +4,6 @@ run_bundle
 
 run 'bundle exec rails g kaminari:config'
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'Kaminariの設定' }
+git commit: %( -m 'Kaminariの設定' )

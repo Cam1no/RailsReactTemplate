@@ -1,4 +1,3 @@
-
 gem_group :development, :test do
   gem 'pry-rails'
   gem 'pry-doc'
@@ -31,6 +30,6 @@ if defined?(PryByebug)
 end
 RUBY
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'Pryの設定' }
+git commit: %( -m 'Pryの設定' )

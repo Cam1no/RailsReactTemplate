@@ -29,6 +29,6 @@ class ErrorsController < ActionController::API
 end
 RUBY
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'エラーハンドリングの設定' }
+git commit: %( -m 'エラーハンドリングの設定' )

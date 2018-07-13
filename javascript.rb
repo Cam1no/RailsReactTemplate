@@ -14,6 +14,6 @@ insert_into_file 'package.json', before: '"dependencies": {' do
   JSON
 end
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'Reactの環境構築' }
+git commit: %( -m 'Reactの環境構築' )

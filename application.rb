@@ -27,7 +27,6 @@ application do
   }
 end
 
+git add: '.'
 
-git add: "."
-
-git commit: %Q{ -m 'application.rbの設定' }
+git commit: %( -m 'application.rbの設定' )

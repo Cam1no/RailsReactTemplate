@@ -11,6 +11,6 @@ run_bundle
 
 run 'bundle exec cap install'
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'Capistrano init' }
+git commit: %( -m 'Capistrano init' )

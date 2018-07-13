@@ -3,6 +3,6 @@ run 'yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y e
 
 run 'svn export https://github.com/Cam1no/RailsReactTemplate/trunk/files/eslintrc.js ./.eslint.js'
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'eslintの設定' }
+git commit: %( -m 'eslintの設定' )

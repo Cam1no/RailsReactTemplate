@@ -17,3 +17,4 @@ bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/development.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/misc.rb
 bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/rubocop.rb
+bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/redis.rb

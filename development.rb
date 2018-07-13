@@ -7,6 +7,6 @@ end
 run_bundle
 run 'touch .env'
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'devで使える設定' }
+git commit: %( -m 'devで使える設定' )

@@ -28,13 +28,12 @@ Metrics/LineLength:
 inherit_from: .rubocop_todo.yml
 YAML
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'rubocopの設定' }
+git commit: %( -m 'rubocopの設定' )
 
-run "bundle exec rubocop -a --auto-gen-config"
+run 'bundle exec rubocop -a --auto-gen-config'
 
+git add: '.'
 
-git add: "."
-
-git commit: %Q{ -m 'fix rubocop' }
+git commit: %( -m 'fix rubocop' )

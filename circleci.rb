@@ -12,21 +12,21 @@ jobs:
         - RAILS_ENV: test
         - DB_HOST: 127.0.0.1
         - TZ: Asia/Tokyo
-        - MYSQL_DATABASE: #{ Rails.application.class.parent_name }_test
-        - DB_USERNAME: #{ Rails.application.class.parent_name }
-        - DB_PASSWORD: #{ Rails.application.class.parent_name }
+        - MYSQL_DATABASE: #{Rails.application.class.parent_name}_test
+        - DB_USERNAME: #{Rails.application.class.parent_name}
+        - DB_PASSWORD: #{Rails.application.class.parent_name}
         - DB_HOST: 127.0.0.1
 
       - image: circleci/mysql:5.7
         environment:
         - TZ: Asia/Tokyo
-        - MYSQL_ROOT_PASSWORD: #{ Rails.application.class.parent_name }
-        - MYSQL_DATABASE: #{ Rails.application.class.parent_name }_test
+        - MYSQL_ROOT_PASSWORD: #{Rails.application.class.parent_name}
+        - MYSQL_DATABASE: #{Rails.application.class.parent_name}_test
         - MYSQL_HOST: 127.0.0.1
-        - MYSQL_USER: #{ Rails.application.class.parent_name }
-        - MYSQL_PASSWORD: #{ Rails.application.class.parent_name }
+        - MYSQL_USER: #{Rails.application.class.parent_name}
+        - MYSQL_PASSWORD: #{Rails.application.class.parent_name}
 
-    working_directory: ~/#{ Rails.application.class.parent_name }
+    working_directory: ~/#{Rails.application.class.parent_name}
 
     steps:
       - checkout
@@ -85,15 +85,13 @@ default: &default
 
 development:
   <<: *default
-  database: #{ Rails.application.class.parent_name }_development
+  database: #{Rails.application.class.parent_name}_development
 
 test:
   <<: *default
-  database: #{ Rails.application.class.parent_name }_test
+  database: #{Rails.application.class.parent_name}_test
 YAML
 
+git add: '.'
 
-
-git add: "."
-
-git commit: %Q{ -m 'CircleCIの設定' }
+git commit: %( -m 'CircleCIの設定' )

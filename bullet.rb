@@ -17,6 +17,6 @@ insert_into_file 'config/environments/development.rb', after: 'config.file_watch
   RUBY
 end
 
-git add: "."
+git add: '.'
 
-git commit: %Q{ -m 'bulletの設定' }
+git commit: %( -m 'bulletの設定' )
