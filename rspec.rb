@@ -9,6 +9,7 @@ gem_group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
+  gem 'shoulda-matchers'
 end
 
 run_bundle
@@ -39,6 +40,26 @@ insert_into_file '.gitignore', after: "/vendor/bundle\n" do
   <<~TEXT
   /coverage/
   TEXT
+end
+
+insert_into_file 'spec/rails_helper.rb' do
+  <<~RUBY
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :active_record
+      with.library :active_model
+      with.library :action_controller
+      with.library :rails
+    end
+  end
+  RUBY
+end
+
+insert_into_file 'spec/rails_helper.rb', after: "require 'rspec/rails'\n" do
+  <<~RUBY
+  require 'shoulda/matchers'
+  RUBY
 end
 
 git add: "."
