@@ -4,7 +4,7 @@ gem_group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-yarn'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
 end
 
 run_bundle
