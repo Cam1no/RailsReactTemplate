@@ -4,7 +4,7 @@ branch = 'master'
 gemfile_url = "#{repo}/#{branch}/gemfile.rb"
 
 file_attributes = {
-  base: %w(application hello_react locale javascript),
+  base: %w(application hello_react locale javascript database),
   debug: %w(pry bullet rubocop),
   service: %w(circleci),
   spec: %w()
