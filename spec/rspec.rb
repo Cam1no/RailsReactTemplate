@@ -1,18 +1,3 @@
-run 'bundle exec spring stop'
-
-gem_group :development, :test do
-  # rspec
-  gem 'rspec-rails'
-  gem 'faker'
-  gem 'timecop'
-  gem 'factory_bot_rails'
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'simplecov', require: false
-  gem 'shoulda-matchers'
-end
-
-run_bundle
 run 'bundle exec rails g rspec:install'
 
 insert_into_file 'spec/spec_helper.rb', before: 'RSpec.configure do |config|' do

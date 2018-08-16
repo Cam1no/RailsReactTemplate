@@ -21,8 +21,7 @@ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib 
 
 # railsアプリができた後に
 ```
-wget https://raw.githubusercontent.com/Cam1no/RailsReactTemplate/master/setup.sh
-sh setup.sh
+bundle exec rails app:template LOCATION=https://raw.githubusercontent.com/Cam1no/faster/master/setup.rb
 ```
 
 ## setting database

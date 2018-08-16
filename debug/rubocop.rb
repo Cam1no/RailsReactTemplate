@@ -1,8 +1,3 @@
-# other
-gem 'rubocop'
-
-run_bundle
-
 create_file '.rubocop.yml', <<YAML
 AllCops:
   Exclude:
@@ -30,7 +25,7 @@ YAML
 
 git add: '.'
 
-git commit: %( -m 'rubocopの設定' )
+git commit: %( -m 'setting rubocop' )
 
 run 'bundle exec rubocop -a --auto-gen-config'
 

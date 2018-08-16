@@ -1,5 +1,3 @@
-run_bundle
-# config/application.rb
 application do
   %q{
     config.time_zone = 'Tokyo'
@@ -29,4 +27,4 @@ end
 
 git add: '.'
 
-git commit: %( -m 'application.rbの設定' )
+git commit: %( -m 'setting application.rb' )

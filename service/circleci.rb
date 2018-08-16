@@ -94,4 +94,4 @@ YAML
 
 git add: '.'
 
-git commit: %( -m 'CircleCIの設定' )
+git commit: %( -m 'setting circleci' )
