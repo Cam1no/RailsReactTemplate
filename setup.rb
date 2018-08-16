@@ -35,3 +35,7 @@ run "mv app/assets/stylesheets/application.css app/assets/stylesheets/applicatio
 
 # whenever
 run 'bundle exec wheneverize .'
+
+git add: '.'
+
+git commit: %( -m 'setting misc' )
