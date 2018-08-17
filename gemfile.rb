@@ -15,6 +15,7 @@ gem_group :development do
   gem 'metric_fu'
   gem 'html2slim'
   gem 'rubocop'
+  gem 'annotate'
 end
 
 gem_group :test do

@@ -36,6 +36,9 @@ run "mv app/assets/stylesheets/application.css app/assets/stylesheets/applicatio
 # whenever
 run 'bundle exec wheneverize .'
 
+# annotate
+run 'bundle exec rails g annotate:install'
+
 git add: '.'
 
 git commit: %( -m 'setting misc' )
