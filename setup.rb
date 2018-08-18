@@ -4,7 +4,7 @@ branch = 'master'
 gemfile_url = "#{repo}/#{branch}/gemfile.rb"
 
 file_attributes = {
-  base: %w(application hello_react locale javascript database),
+  base: %w(application hello_react locale javascript database job),
   debug: %w(pry bullet rubocop),
   service: %w(circleci),
   spec: %w()
@@ -14,7 +14,11 @@ apply gemfile_url
 
 file_attributes.each do |key, values|
   values.each do |value|
-    apply "#{repo}/#{branch}/#{key}/#{value}.rb"
+    if ENV['DEV']
+      apply "#{File.dirname(__FILE__)}/#{key}/#{value}.rb"
+    else
+      apply "#{repo}/#{branch}/#{key}/#{value}.rb"
+    end
   end
 end
 
