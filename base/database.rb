@@ -20,8 +20,8 @@ if yes?('are you using mysql? y/n')
     <<: *default
     database: #{Rails.application.class.parent_name}_test
   YAML
+  
+  git add: '.'
+
+  git commit: %( -m 'setting database' )
 end
-
-git add: '.'
-
-git commit: %( -m 'setting database' )
