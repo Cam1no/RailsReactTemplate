@@ -2,6 +2,7 @@ gem 'kaminari'
 gem 'rails-i18n'
 gem 'whenever', require: false
 gem 'delayed_job_active_record'
+gem 'slack-notifier'
 
 gem_group :development do
   gem 'bullet'
