@@ -8,6 +8,7 @@ gem 'counter_culture'
 gem 'csv_shaper'
 gem 'draper'
 gem 'email_validator'
+gem 'rails-observers'
 
 gem_group :development do
   gem 'bullet'
