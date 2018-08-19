@@ -9,8 +9,13 @@ gem 'csv_shaper'
 gem 'draper'
 gem 'email_validator'
 gem 'rails-observers'
+# gem 'stream_rails' https://github.com/GetStream/stream-rails
+gem 'validate_url'
 
 gem_group :development do
+  gem 'derailed_benchmarks' # https://techracho.bpsinc.jp/hachi8833/2018_03_29/51875
+  gem 'brakeman'
+  gem 'bundler-audit'
   gem 'bullet'
   gem 'capistrano'
   gem 'capistrano-bundler'
@@ -28,6 +33,7 @@ end
 
 gem_group :test do
   gem 'slim_lint'
+  gem 'parallel_tests'
 end
 
 gem_group :development, :test do
@@ -49,6 +55,9 @@ gem_group :development, :test do
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'shoulda-matchers'
+  # spring
+  gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 run_bundle
