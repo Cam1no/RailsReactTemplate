@@ -3,6 +3,11 @@ gem 'rails-i18n'
 gem 'whenever', require: false
 gem 'delayed_job_active_record'
 gem 'slack-notifier'
+# gem 'ancestry'
+gem 'counter_culture'
+gem 'csv_shaper'
+gem 'draper'
+gem 'email_validator'
 
 gem_group :development do
   gem 'bullet'
