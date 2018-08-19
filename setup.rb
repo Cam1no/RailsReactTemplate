@@ -43,6 +43,17 @@ run 'bundle exec wheneverize .'
 # annotate
 run 'bundle exec rails g annotate:install'
 
+run 'rm -rf test'
+
+# make dir
+run 'mkdir app/services'
+run 'mkdir app/tasks'
+run 'mkdir app/serializers'
+run 'mkdir app/callbacks'
+run 'mkdir app/validators'
+run 'mkdir app/notifiers'
+run 'mkdir app/forms'
+
 git add: '.'
 
 git commit: %( -m 'setting misc' )
