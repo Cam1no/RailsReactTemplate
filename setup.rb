@@ -8,7 +8,8 @@ file_attributes = {
   base: %w(application hello_react locale javascript database job),
   debug: %w(pry bullet),
   service: %w(circleci),
-  spec: %w()
+  spec: %w(rspec),
+  authority: %w(pundit)
 }
 
 apply gemfile_url

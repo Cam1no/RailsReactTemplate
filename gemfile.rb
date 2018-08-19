@@ -11,6 +11,7 @@ gem 'email_validator'
 gem 'rails-observers'
 # gem 'stream_rails' https://github.com/GetStream/stream-rails
 gem 'validate_url'
+gem 'pundit'
 
 gem_group :development do
   gem 'derailed_benchmarks' # https://techracho.bpsinc.jp/hachi8833/2018_03_29/51875
