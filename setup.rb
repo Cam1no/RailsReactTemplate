@@ -12,7 +12,11 @@ file_attributes = {
   authority: %w(pundit)
 }
 
-apply gemfile_url
+if ENV['DEV']
+  apply "#{File.dirname(__FILE__)}/gemfile.rb"
+else
+  apply gemfile_url
+end
 
 file_attributes.each do |key, values|
   values.each do |value|
