@@ -10,6 +10,7 @@ require 'factory_bot_rails'
 require 'simplecov'
 require 'shoulda/matchers'
 require 'vcr'
+require 'pundit/matchers'
 SimpleCov.start 'rails'
 
 RUBY

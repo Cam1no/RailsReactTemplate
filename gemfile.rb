@@ -60,6 +60,7 @@ gem_group :development, :test do
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'shoulda-matchers'
+  gem 'pundit-matchers'
   # spring
   gem 'spring'
   gem 'spring-commands-rspec'
