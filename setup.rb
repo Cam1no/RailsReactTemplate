@@ -8,7 +8,7 @@ file_attributes = {
   base: %w(application hello_react locale javascript database job),
   debug: %w(pry bullet),
   service: %w(circleci acts_as_taggable_on),
-  spec: %w(),
+  spec: %w(rspec),
   authority: %w(pundit)
 }
 

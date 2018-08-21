@@ -1,34 +1,38 @@
 run 'bundle exec rails g rspec:install'
 
-insert_into_file 'spec/spec_helper.rb', before: 'RSpec.configure do |config|' do
-  <<~RUBY
+file '.rspec', <<~CODE
+  --color
+  --require spec_helper
+CODE
 
-  require 'factory_bot_rails'
-  require 'simplecov'
-  SimpleCov.start 'rails'
-  RUBY
-end
+insert_into_file 'spec/spec_helper.rb', <<RUBY, before: 'RSpec.configure do |config|'
+require 'factory_bot_rails'
+require 'simplecov'
+require 'shoulda/matchers'
+require 'vcr'
+SimpleCov.start 'rails'
 
-insert_into_file 'spec/spec_helper.rb', after: 'RSpec.configure do |config|' do
-  <<-RUBY
+RUBY
+
+insert_into_file 'spec/rails_helper.rb', <<RUBY, after: 'RSpec.configure do |config|'
+
+  config.before :suite do
+    DatabaseRewinder.clean_all
+  end
+
+  config.after :each do
+    DatabaseRewinder.clean
+  end
+
   config.before :all do
     FactoryBot.reload
     FactoryBot.factories.clear
     FactoryBot.sequences.clear
     FactoryBot.find_definitions
   end
+
   config.include FactoryBot::Syntax::Methods
-  RUBY
-end
 
-insert_into_file '.gitignore', after: "/vendor/bundle\n" do
-  <<~TEXT
-  /coverage/
-  TEXT
-end
-
-insert_into_file 'spec/rails_helper.rb' do
-  <<~RUBY
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
       with.test_framework :rspec
@@ -38,15 +42,18 @@ insert_into_file 'spec/rails_helper.rb' do
       with.library :rails
     end
   end
-  RUBY
-end
 
-insert_into_file 'spec/rails_helper.rb', after: "require 'rspec/rails'\n" do
-  <<~RUBY
-  require 'shoulda/matchers'
-  RUBY
-end
+  VCR.configure do |c|
+    c.cassette_library_dir = 'spec/vcr'
+    c.hook_into :webmock
+    c.allow_http_connections_when_no_cassette = true
+  end
+RUBY
+
+append_to_file '.gitignore', <<~CODE
+  coverage
+CODE
 
 git add: "."
 
-git commit: %Q{ -m 'rspecの設定' }
+git commit: %Q{ -m 'setting rspec' }

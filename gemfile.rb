@@ -53,6 +53,9 @@ gem_group :development, :test do
   gem 'faker'
   gem 'timecop'
   gem 'factory_bot_rails'
+  gem 'database_rewinder'
+  gem 'webmock'
+  gem 'vcr'
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
