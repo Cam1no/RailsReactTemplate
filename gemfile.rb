@@ -29,7 +29,6 @@ gem_group :development do
   gem 'dotenv-rails'
   gem 'metric_fu'
   gem 'html2slim'
-  gem 'rubocop'
   gem 'annotate'
 end
 
@@ -64,6 +63,10 @@ gem_group :development, :test do
   # spring
   gem 'spring'
   gem 'spring-commands-rspec'
+
+  # rubocop
+  gem 'rubocop'
+  gem 'rubocop-rspec'
 end
 
 run_bundle
