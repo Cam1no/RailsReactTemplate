@@ -5,7 +5,7 @@ gemfile_url = "#{repo}/#{branch}/gemfile.rb"
 rubocop_url = "#{repo}/#{branch}/debug/rubocop.rb"
 
 file_attributes = {
-  base: %w(application hello_react locale javascript database job),
+  base: %w(application hello_react locale javascript job),
   debug: %w(pry bullet),
   service: %w(circleci acts_as_taggable_on),
   spec: %w(rspec),
