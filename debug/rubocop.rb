@@ -27,7 +27,7 @@ AllCops:
     - config/**/*
     - Gemfile
     - bin/**/*
-    - db/**/.rb
+    - db/**/*.rb
     - spec/**/*
     - node_modules/**/*
   DisplayStyleGuide: true
