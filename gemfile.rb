@@ -74,6 +74,10 @@ gem_group :development, :test do
   gem 'rubocop-rspec'
 end
 
+append_to_file '.gitignore', <<~CODE
+  vendor/bundle
+CODE
+
 run_bundle
 
 
