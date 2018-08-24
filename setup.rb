@@ -7,7 +7,7 @@ rubocop_url = "#{repo}/#{branch}/debug/rubocop.rb"
 file_attributes = {
   base: %w(application hello_react locale javascript job image_upload),
   debug: %w(pry bullet),
-  service: %w(circleci acts_as_taggable_on acts_as_votable),
+  service: %w(circleci acts_as_taggable_on acts_as_votable acts_as_follower),
   spec: %w(rspec),
   authority: %w(pundit)
 }

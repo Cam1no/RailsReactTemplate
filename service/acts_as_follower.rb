@@ -1,0 +1,1 @@
+run 'bundle exec rails g acts_as_follower'

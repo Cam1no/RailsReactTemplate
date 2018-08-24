@@ -18,6 +18,7 @@ gem 'aws-sdk-s3'
 gem 'mini_magick'
 gem 'activerecord-import'
 gem 'acts_as_votable'
+gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
 
 gem_group :development do
   gem 'derailed_benchmarks' # https://techracho.bpsinc.jp/hachi8833/2018_03_29/51875
