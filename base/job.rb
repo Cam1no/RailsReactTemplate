@@ -1,3 +1,5 @@
+run 'bundle exec spring stop'
+
 run 'bundle exec rails g delayed_job:active_record'
 
 # run 'bundle exec rails db:migrate'
