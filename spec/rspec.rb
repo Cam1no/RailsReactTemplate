@@ -3,6 +3,7 @@ run 'bundle exec rails g rspec:install'
 file '.rspec', <<~CODE
   --color
   --require spec_helper
+  --format doc
 CODE
 
 insert_into_file 'spec/spec_helper.rb', <<RUBY, before: 'RSpec.configure do |config|'
