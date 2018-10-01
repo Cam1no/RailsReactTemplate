@@ -12,13 +12,14 @@ gem 'rails-observers'
 # gem 'stream_rails' https://github.com/GetStream/stream-rails
 gem 'validate_url'
 gem 'pundit'
-gem 'acts-as-taggable-on', '~> 6.0' # https://github.com/mbleigh/acts-as-taggable-on
+# gem 'acts-as-taggable-on', '~> 6.0' # https://github.com/mbleigh/acts-as-taggable-on
 gem 'slim-rails'
 gem 'aws-sdk-s3'
 gem 'mini_magick'
 gem 'activerecord-import'
+gem 'email_validator'
 # gem 'acts_as_votable', '~> 0.11.1' migrationできない
-gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
+# gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
 
 gem_group :development do
   gem 'derailed_benchmarks' # https://techracho.bpsinc.jp/hachi8833/2018_03_29/51875
